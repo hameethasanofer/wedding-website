@@ -25,7 +25,7 @@ export default function InvitationCover({ onOpen }) {
               rotateY: -20,
               transition: { duration: 1.5, ease: [0.77, 0, 0.175, 1], delay: 0.2 } 
             }}
-            className="relative w-1/2 h-full bg-wedding-navy border-r-[0.5px] border-wedding-gold/30 shadow-[10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-left"
+            className="relative w-1/2 h-full bg-wedding-purple border-r-[0.5px] border-wedding-gold/30 shadow-[10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-left"
           >
             {/* Texture Overlay */}
             <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] pointer-events-none"></div>
@@ -50,7 +50,7 @@ export default function InvitationCover({ onOpen }) {
               rotateY: 20,
               transition: { duration: 1.5, ease: [0.77, 0, 0.175, 1], delay: 0.2 } 
             }}
-            className="relative w-1/2 h-full bg-wedding-navy border-l-[0.5px] border-wedding-gold/30 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-right"
+            className="relative w-1/2 h-full bg-wedding-purple border-l-[0.5px] border-wedding-gold/30 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-right"
           >
             {/* Texture Overlay */}
             <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] pointer-events-none"></div>
@@ -86,11 +86,11 @@ export default function InvitationCover({ onOpen }) {
                   animate={{ letterSpacing: "0.5em" }}
                   className="text-wedding-gold font-serif text-3xl md:text-6xl mb-6 drop-shadow-lg"
                 >
-                  Emma & James
+                  கோபி & துஷ்யந்தி
                 </motion.h2>
                 <div className="h-[1px] w-48 bg-gradient-to-r from-transparent via-wedding-gold/60 to-transparent mx-auto"></div>
                 <p className="text-wedding-gold-light/80 font-sans uppercase tracking-[0.6em] text-xs md:text-sm mt-6">
-                  September 24, 2026
+                  செப்டம்பர் 24, 2026
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ export default function InvitationCover({ onOpen }) {
                 
                 <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 opacity-60 group-hover:opacity-100 transition-opacity">
                   <span className="text-wedding-gold font-sans uppercase tracking-[0.4em] text-[10px] whitespace-nowrap">
-                    Click to Open
+                    திறக்க இங்கே அழுத்தவும்
                   </span>
                   <motion.div 
                     animate={{ y: [0, 5, 0] }}

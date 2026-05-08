@@ -21,11 +21,13 @@ export default function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat scale-110"
       >
         <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero-bg.png')" }}
+          className="absolute inset-0 bg-cover bg-center bg-[#1a0320]"
+          style={{ backgroundImage: "url('https://crystallinestudio.com/blogmoreimg/13_crystalline.jpg')" }}
         ></div>
-        {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Theme Tint Overlay */}
+        <div className="absolute inset-0 bg-[#35063e]/40"></div>
+        {/* Gradient for extra depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60"></div>
       </motion.div>
 
       {/* Content: Invitation Card */}
@@ -34,7 +36,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
-        className="relative z-10 text-center px-8 py-12 md:px-16 md:py-20 bg-wedding-navy/85 backdrop-blur-xl shadow-[0_30px_60px_rgba(0,0,0,0.8)] border border-wedding-gold/40 flex flex-col items-center max-w-xl w-[90%] md:w-full mx-auto"
+        className="relative z-10 text-center px-8 py-12 md:px-16 md:py-20 bg-wedding-purple/85 backdrop-blur-xl shadow-[0_30px_60px_rgba(0,0,0,0.8)] border border-wedding-gold/40 flex flex-col items-center max-w-xl w-[90%] md:w-full mx-auto"
       >
         {/* Decorative inner border */}
         <div className="absolute inset-4 border border-wedding-gold/20 pointer-events-none"></div>
@@ -45,7 +47,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-wedding-gold uppercase tracking-[0.4em] text-[10px] md:text-xs mb-8 font-light"
         >
-          We invite you to celebrate
+          உங்களை அன்புடன் அழைக்கிறோம்
         </motion.p>
         
         <motion.h1 
@@ -54,7 +56,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 1 }}
           className="text-5xl md:text-7xl lg:text-8xl text-wedding-gold font-serif mb-8 drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)]"
         >
-          Emma & James
+          கோபி & துஷ்யந்தி
         </motion.h1>
         
         <motion.div
@@ -63,9 +65,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.7 }}
           className="flex flex-col items-center space-y-2 text-wedding-gold-light/90 text-base md:text-lg font-serif italic"
         >
-          <span>September 24, 2026</span>
+          <span>செப்டம்பர் 24, 2026</span>
           <span className="w-12 h-[1px] bg-wedding-gold/50 my-2"></span>
-          <span>Lake Como, Italy</span>
+          <span>ஜா-எல, இலங்கை</span>
         </motion.div>
       </motion.div>
 
@@ -77,7 +79,7 @@ export default function Hero() {
         className="absolute bottom-20 z-10"
       >
         <Link to="story" smooth={true} duration={800} className="cursor-pointer flex flex-col items-center text-white opacity-80 hover:opacity-100 transition-opacity drop-shadow-md">
-          <span className="text-xs tracking-widest uppercase mb-2">Scroll</span>
+          <span className="text-xs tracking-widest uppercase mb-2">கீழே செல்லவும்</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}

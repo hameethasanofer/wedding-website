@@ -56,7 +56,7 @@ export default function MusicPlayer() {
       
       <button 
         onClick={togglePlay}
-        className="w-12 h-12 rounded-full bg-wedding-navy text-wedding-gold flex items-center justify-center shadow-lg hover:bg-wedding-gold hover:text-wedding-navy transition-all duration-300 relative border border-wedding-gold/30"
+        className="w-12 h-12 rounded-full bg-wedding-purple text-wedding-gold flex items-center justify-center shadow-lg hover:bg-wedding-gold hover:text-wedding-purple transition-all duration-300 relative border border-wedding-gold/30"
         aria-label={isPlaying ? "Pause music" : "Play music"}
       >
         {isPlaying ? (

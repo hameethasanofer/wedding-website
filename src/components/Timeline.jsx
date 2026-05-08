@@ -2,17 +2,17 @@ import Section from './Section';
 import { motion } from 'framer-motion';
 
 const SCHEDULE = [
-  { time: "3:00 PM", title: "Ceremony", desc: "Villa del Balbianello gardens. Please arrive by 2:30 PM." },
-  { time: "4:30 PM", title: "Aperitivo", desc: "Cocktails and canapés overlooking the lake." },
-  { time: "6:00 PM", title: "Dinner", desc: "A four-course Italian feast at Grand Hotel Tremezzo." },
-  { time: "8:30 PM", title: "Cutting the Cake", desc: "Sweet treats and toasts to the newlyweds." },
-  { time: "9:00 PM", title: "Party", desc: "Bring your dancing shoes!" },
-  { time: "12:00 AM", title: "Farewell", desc: "Sparkler send-off as the night concludes." }
+  { time: "பிற்பகல் 3:00 மணி", title: "திருமணம்", desc: "ஹோட்டல் ட்ரீம் பாரடைஸ் தோட்டம். தயவுசெய்து பிற்பகல் 2:30 மணிக்குள் வந்து சேரவும்." },
+  { time: "பிற்பகல் 4:30 மணி", title: "சிற்றுண்டி", desc: "சிறப்பு சிற்றுண்டிகள் மற்றும் பானங்கள்." },
+  { time: "பிற்பகல் 6:00 மணி", title: "இரவு விருந்து", desc: "ருசியான விருந்து உணவு." },
+  { time: "இரவு 8:30 மணி", title: "கேக் வெட்டுதல்", desc: "புதுமணத் தம்பதிகளுக்கு வாழ்த்துகள் மற்றும் இனிப்புகள்." },
+  { time: "இரவு 9:00 மணி", title: "கொண்டாட்டம்", desc: "நடனமாடி மகிழுங்கள்!" },
+  { time: "இரவு 12:00 மணி", title: "நன்றி உரை", desc: "இனிய நினைவுகளுடன் விடைபெறுதல்." }
 ];
 
 export default function Timeline() {
   return (
-    <Section id="timeline" title="Timeline" subtitle="The Big Day">
+    <Section id="timeline" title="காலவரிசை" subtitle="திருமண நாள்">
       <div className="max-w-3xl mx-auto relative">
         {/* Vertical Line */}
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[1px] bg-wedding-gold/30 -translate-x-1/2"></div>

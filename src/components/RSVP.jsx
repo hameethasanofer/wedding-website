@@ -25,7 +25,7 @@ export default function RSVP() {
   };
 
   return (
-    <Section id="rsvp" title="RSVP" subtitle="Join Us" dark={true}>
+    <Section id="rsvp" title="பதிலளிக்கவும்" subtitle="எங்களுடன் சேருங்கள்" dark={true}>
       <div className="max-w-2xl mx-auto bg-wedding-cream text-wedding-text p-8 md:p-12 shadow-xl border border-wedding-gold/20">
         
         {submitted ? (
@@ -34,21 +34,21 @@ export default function RSVP() {
             animate={{ opacity: 1, scale: 1 }}
             className="text-center py-12"
           >
-            <h3 className="font-serif text-3xl text-wedding-dark mb-4">Thank You!</h3>
+            <h3 className="font-serif text-3xl text-wedding-dark mb-4">நன்றி!</h3>
             <p className="text-lg font-light text-wedding-text/80">
-              We have received your response. We can't wait to celebrate with you!
+              உங்கள் பதில் எங்களுக்கு கிடைத்துவிட்டது. உங்களுடன் கொண்டாடுவதற்காக நாங்கள் காத்திருக்கிறோம்!
             </p>
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="text-center mb-8">
-              <p className="italic text-wedding-text/70 mb-2">Kindly respond by</p>
-              <p className="font-serif text-xl text-wedding-dark">August 1st, 2026</p>
+              <p className="italic text-wedding-text/70 mb-2">தயவுசெய்து பதிலளிக்கவும்</p>
+              <p className="font-serif text-xl text-wedding-dark">ஆகஸ்ட் 1, 2026</p>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">Full Name</label>
+                <label htmlFor="name" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">முழு பெயர்</label>
                 <input 
                   type="text" 
                   id="name" 
@@ -62,7 +62,7 @@ export default function RSVP() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">Email Address</label>
+                <label htmlFor="email" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">மின்னஞ்சல் முகவரி</label>
                 <input 
                   type="email" 
                   id="email" 
@@ -77,7 +77,7 @@ export default function RSVP() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="guests" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">Number of Guests</label>
+                  <label htmlFor="guests" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">விருந்தினர்களின் எண்ணிக்கை</label>
                   <select 
                     id="guests" 
                     name="guests" 
@@ -93,7 +93,7 @@ export default function RSVP() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">Will you attend?</label>
+                  <label className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">நீங்கள் வருவீர்களா?</label>
                   <div className="flex space-x-6 py-2">
                     <label className="flex items-center space-x-2 cursor-pointer">
                       <input 
@@ -104,7 +104,7 @@ export default function RSVP() {
                         onChange={handleChange}
                         className="accent-wedding-gold"
                       />
-                      <span>Joyfully Accept</span>
+                      <span>மகிழ்ச்சியுடன் வருகிறேன்</span>
                     </label>
                     <label className="flex items-center space-x-2 cursor-pointer">
                       <input 
@@ -115,14 +115,14 @@ export default function RSVP() {
                         onChange={handleChange}
                         className="accent-wedding-gold"
                       />
-                      <span>Regretfully Decline</span>
+                      <span>மன்னிக்கவும், வர இயலாது</span>
                     </label>
                   </div>
                 </div>
               </div>
 
               <div>
-                <label htmlFor="dietary" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">Dietary Requirements (Optional)</label>
+                <label htmlFor="dietary" className="block text-sm uppercase tracking-widest text-wedding-text/70 mb-2">உணவுத் தேவைகள் (விருப்பமானவை)</label>
                 <input 
                   type="text" 
                   id="dietary" 
@@ -140,7 +140,7 @@ export default function RSVP() {
                 type="submit" 
                 className="px-12 py-4 bg-wedding-dark text-wedding-cream tracking-widest uppercase text-sm hover:bg-wedding-gold transition-colors duration-300 w-full md:w-auto"
               >
-                Send RSVP
+                பதிலை அனுப்புக
               </button>
             </div>
           </form>

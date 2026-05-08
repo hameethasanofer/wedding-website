@@ -4,7 +4,7 @@ export default function Section({ id, title, subtitle, children, className = '',
   return (
     <section 
       id={id} 
-      className={`py-24 md:py-32 px-6 ${dark ? 'bg-wedding-navy text-wedding-cream' : 'bg-wedding-cream'} ${className}`}
+      className={`py-24 md:py-32 px-6 ${dark ? 'bg-wedding-purple text-wedding-cream' : 'bg-wedding-cream'} ${className}`}
     >
       <div className="max-w-6xl mx-auto">
         {(title || subtitle) && (
