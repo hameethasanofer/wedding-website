@@ -23,7 +23,7 @@ export default function InvitationCover({ onOpen }) {
             exit={{ 
               x: '-100%', 
               rotateY: -20,
-              transition: { duration: 1.2, ease: [0.77, 0, 0.175, 1] } 
+              transition: { duration: 1.5, ease: [0.77, 0, 0.175, 1], delay: 0.2 } 
             }}
             className="relative w-1/2 h-full bg-wedding-navy border-r-[0.5px] border-wedding-gold/30 shadow-[10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-left"
           >
@@ -48,7 +48,7 @@ export default function InvitationCover({ onOpen }) {
             exit={{ 
               x: '100%', 
               rotateY: 20,
-              transition: { duration: 1.2, ease: [0.77, 0, 0.175, 1] } 
+              transition: { duration: 1.5, ease: [0.77, 0, 0.175, 1], delay: 0.2 } 
             }}
             className="relative w-1/2 h-full bg-wedding-navy border-l-[0.5px] border-wedding-gold/30 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-right"
           >
