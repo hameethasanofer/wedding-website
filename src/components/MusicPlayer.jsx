@@ -16,15 +16,23 @@ export default function MusicPlayer() {
       playerRef.current = new window.YT.Player('youtube-player', {
         height: '0',
         width: '0',
-        videoId: 'bc8Gra5L8Q4', // The requested song
+        videoId: 'bc8Gra5L8Q4',
         playerVars: {
           'autoplay': 0,
           'loop': 1,
-          'playlist': 'bc8Gra5L8Q4'
+          'playlist': 'bc8Gra5L8Q4',
+          'controls': 0,
+          'disablekb': 1,
+          'enablejsapi': 1
         },
         events: {
           'onReady': (event) => {
             event.target.setVolume(30);
+            // Pre-warm the player by playing and immediately pausing
+            event.target.playVideo();
+            setTimeout(() => {
+              event.target.pauseVideo();
+            }, 100);
           }
         }
       });
