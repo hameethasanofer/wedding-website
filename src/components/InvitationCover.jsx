@@ -6,16 +6,14 @@ export default function InvitationCover({ onOpen }) {
 
   const handleOpen = () => {
     setIsOpen(true);
-    setTimeout(() => {
-      if (onOpen) onOpen();
-    }, 1800); // Increased duration for smoother transition
+    if (onOpen) onOpen(); // Open the website content immediately
   };
 
   return (
     <AnimatePresence>
       {!isOpen && (
         <motion.div
-          className="fixed inset-0 z-[100] flex overflow-hidden bg-wedding-cream"
+          className="fixed inset-0 z-[100] flex overflow-hidden pointer-events-auto"
           exit={{ pointerEvents: 'none' }}
         >
           {/* Left Panel */}
@@ -25,7 +23,7 @@ export default function InvitationCover({ onOpen }) {
             exit={{ 
               x: '-100%', 
               rotateY: -20,
-              transition: { duration: 1.8, ease: [0.77, 0, 0.175, 1] } 
+              transition: { duration: 1.2, ease: [0.77, 0, 0.175, 1] } 
             }}
             className="relative w-1/2 h-full bg-wedding-navy border-r-[0.5px] border-wedding-gold/30 shadow-[10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-left"
           >
@@ -50,7 +48,7 @@ export default function InvitationCover({ onOpen }) {
             exit={{ 
               x: '100%', 
               rotateY: 20,
-              transition: { duration: 1.8, ease: [0.77, 0, 0.175, 1] } 
+              transition: { duration: 1.2, ease: [0.77, 0, 0.175, 1] } 
             }}
             className="relative w-1/2 h-full bg-wedding-navy border-l-[0.5px] border-wedding-gold/30 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] z-20 origin-right"
           >
@@ -75,11 +73,11 @@ export default function InvitationCover({ onOpen }) {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ 
                 opacity: 0, 
-                scale: 1.5, 
-                filter: 'blur(20px)',
-                transition: { duration: 1 } 
+                scale: 1.2, 
+                filter: 'blur(10px)',
+                transition: { duration: 0.8 } 
               }}
-              transition={{ duration: 1.2 }}
+              transition={{ duration: 1 }}
               className="flex flex-col items-center"
             >
               <div className="mb-12 text-center">

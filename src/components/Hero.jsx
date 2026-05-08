@@ -33,7 +33,7 @@ export default function Hero() {
         style={{ opacity }}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
         className="relative z-10 text-center px-8 py-12 md:px-16 md:py-20 bg-wedding-navy/85 backdrop-blur-xl shadow-[0_30px_60px_rgba(0,0,0,0.8)] border border-wedding-gold/40 flex flex-col items-center max-w-xl w-[90%] md:w-full mx-auto"
       >
         {/* Decorative inner border */}
@@ -42,7 +42,7 @@ export default function Hero() {
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
           className="text-wedding-gold uppercase tracking-[0.4em] text-[10px] md:text-xs mb-8 font-light"
         >
           We invite you to celebrate
@@ -51,7 +51,7 @@ export default function Hero() {
         <motion.h1 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 1.2 }}
+          transition={{ duration: 1.2, delay: 0.5 }}
           className="text-5xl md:text-7xl lg:text-8xl text-wedding-gold font-serif mb-8 drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)]"
         >
           Emma & James
@@ -60,7 +60,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
+          transition={{ duration: 1, delay: 0.7 }}
           className="flex flex-col items-center space-y-2 text-wedding-gold-light/90 text-base md:text-lg font-serif italic"
         >
           <span>September 24, 2026</span>
@@ -73,7 +73,7 @@ export default function Hero() {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2.5, duration: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-20 z-10"
       >
         <Link to="story" smooth={true} duration={800} className="cursor-pointer flex flex-col items-center text-white opacity-80 hover:opacity-100 transition-opacity drop-shadow-md">
